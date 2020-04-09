@@ -18,6 +18,7 @@ public class MakeDesision {
 
             case 1: {
                 if (Main.getInitialWaterSupply() >= espressoWater && Main.getInitialCoffeeBeanSupply() >= espressoCoffeeBeans) {
+                    System.out.println("I have enough resources, making you a coffee!");
                     Main.setInitialWaterSupply(Main.getInitialWaterSupply() - espressoWater);
                     Main.setInitialCoffeeBeanSupply(Main.getInitialCoffeeBeanSupply() - espressoCoffeeBeans);
                     Main.setInitialMoneySupply(Main.getInitialMoneySupply() + espressoPrice);
@@ -30,7 +31,7 @@ public class MakeDesision {
             }
             case 2: {
                 if (Main.getInitialWaterSupply() >= latteWater && Main.getInitialCoffeeBeanSupply() >= latteCoffeeBeans && Main.getInitialMilkSupply() >= latteMilk) {
-
+                    System.out.println("I have enough resources, making you a coffee!");
                     Main.setInitialWaterSupply(Main.getInitialWaterSupply() - latteWater);
                     Main.setInitialCoffeeBeanSupply(Main.getInitialCoffeeBeanSupply() - latteCoffeeBeans);
                     Main.setInitialMoneySupply(Main.getInitialMoneySupply() + lattePrice);
@@ -43,6 +44,8 @@ public class MakeDesision {
             }
             case 3: {
                 if (Main.getInitialWaterSupply() >= cappuccinoWater && Main.getInitialCoffeeBeanSupply() >= cappuccinoCoffeeBeans) {
+                    System.out.println("I have enough resources, making you a coffee!");
+
                     Main.setInitialWaterSupply(Main.getInitialWaterSupply() - cappuccinoWater);
                     Main.setInitialCoffeeBeanSupply(Main.getInitialCoffeeBeanSupply() - cappuccinoCoffeeBeans);
                     Main.setInitialMoneySupply(Main.getInitialMoneySupply() + cappuccinoPrice);
