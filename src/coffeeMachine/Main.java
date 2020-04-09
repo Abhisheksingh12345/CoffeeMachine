@@ -17,8 +17,8 @@ public class Main {
     public static void menu() {
         boolean comeOut = false;
         while (!comeOut) {
-            System.out.println("Write action (buy, fill, take, remaining, exit): ");
-            String choice = tell.nextLine();
+            System.out.println("\nWrite action (buy, fill, take, remaining, exit): ");
+            String choice = tell.next();
             switch (choice) {
                 case "buy": {
                     buy();
@@ -78,5 +78,45 @@ public class Main {
     private static void makeCoffee(int choice) {
         MakeDesision desisionOn = new MakeDesision();
         desisionOn.makeOn(choice);
+    }
+
+    public static int getInitialWaterSupply() {
+        return initialWaterSupply;
+    }
+
+    public static void setInitialWaterSupply(int initialWaterSupply) {
+        Main.initialWaterSupply = initialWaterSupply;
+    }
+
+    public static int getInitialMilkSupply() {
+        return initialMilkSupply;
+    }
+
+    public static void setInitialMilkSupply(int initialMilkSupply) {
+        Main.initialMilkSupply = initialMilkSupply;
+    }
+
+    public static int getInitialCoffeeBeanSupply() {
+        return initialCoffeeBeanSupply;
+    }
+
+    public static void setInitialCoffeeBeanSupply(int initialCoffeeBeanSupply) {
+        Main.initialCoffeeBeanSupply = initialCoffeeBeanSupply;
+    }
+
+    public static int getInitialCupSupply() {
+        return initialCupSupply;
+    }
+
+    public static void setInitialCupSupply(int initialCupSupply) {
+        Main.initialCupSupply = initialCupSupply;
+    }
+
+    public static int getInitialMoneySupply() {
+        return initialMoneySupply;
+    }
+
+    public static void setInitialMoneySupply(int initialMoneySupply) {
+        Main.initialMoneySupply = initialMoneySupply;
     }
 }
