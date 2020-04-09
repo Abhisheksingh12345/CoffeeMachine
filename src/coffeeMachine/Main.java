@@ -57,4 +57,10 @@ public class Main {
         System.out.println(initialCupSupply + " of disposable cups");
         System.out.println("$"+initialMoneySupply + " of money");
     }
+    private static void buy(){
+        System.out.println("\nWhat do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:");
+        int choice = tell.nextInt();
+        makeCoffee(choice);
+    }
+
 }
