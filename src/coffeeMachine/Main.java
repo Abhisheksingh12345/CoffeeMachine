@@ -6,7 +6,7 @@ public class Main {
     private static int initialWaterSupply = 400;
     private static int initialMilkSupply = 540;
     private static int initialCoffeeBeanSupply = 120;
-    private static int initialDisposableCupSupply = 9;
+    private static int initialCupSupply = 9;
     private static int initialMoneySupply = 550;
     private static Scanner tell = new Scanner(System.in);
 
@@ -47,5 +47,14 @@ public class Main {
             }
 
         }
+    }
+
+    private static void remaining() {
+        System.out.println("\nThe coffee machine has :");
+        System.out.println(initialWaterSupply + " of water");
+        System.out.println(initialMilkSupply + " of milk");
+        System.out.println(initialCoffeeBeanSupply + " of coffee beans");
+        System.out.println(initialCupSupply + " of disposable cups");
+        System.out.println("$"+initialMoneySupply + " of money");
     }
 }
