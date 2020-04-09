@@ -54,15 +54,15 @@ public class Main {
         System.out.println(initialMilkSupply + " of milk");
         System.out.println(initialCoffeeBeanSupply + " of coffee beans");
         System.out.println(initialCupSupply + " of disposable cups");
-        System.out.println("$"+initialMoneySupply + " of money");
+        System.out.println(((initialMoneySupply != 0)? "$":"")+initialMoneySupply + " of money");
     }
     private static void buy(){
         System.out.println("\nWhat do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:");
         int choice = tell.nextInt();
         makeCoffee(choice);
     }
-    private static void fill(){
-        System.out.println("Write how many ml of water do you want to add: ");
+    private static void fill() {
+        System.out.println("\nWrite how many ml of water do you want to add: ");
         initialWaterSupply += tell.nextInt();
         System.out.println("Write how many ml of milk do you want to add: ");
         initialMilkSupply += tell.nextInt();
@@ -74,5 +74,9 @@ public class Main {
     private static void  take(){
         System.out.println("I gave you $"+initialMoneySupply);
         initialMoneySupply = 0;
+    }
+    private static void makeCoffee(int choice) {
+        MakeDesision desisionOn = new MakeDesision();
+        desisionOn.makeOn(choice);
     }
 }
