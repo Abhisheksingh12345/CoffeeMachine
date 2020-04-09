@@ -11,7 +11,6 @@ public class Main {
     private static Scanner tell = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // write your code here
         menu();
     }
 
@@ -71,5 +70,9 @@ public class Main {
         initialCoffeeBeanSupply += tell.nextInt();
         System.out.println("Write how many disposable cups of coffee do you want to add: ");
         initialCupSupply += tell.nextInt();
+    }
+    private static void  take(){
+        System.out.println("I gave you $"+initialMoneySupply);
+        initialMoneySupply = 0;
     }
 }
