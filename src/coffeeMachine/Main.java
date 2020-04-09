@@ -62,5 +62,14 @@ public class Main {
         int choice = tell.nextInt();
         makeCoffee(choice);
     }
-
+    private static void fill(){
+        System.out.println("Write how many ml of water do you want to add: ");
+        initialWaterSupply += tell.nextInt();
+        System.out.println("Write how many ml of milk do you want to add: ");
+        initialMilkSupply += tell.nextInt();
+        System.out.println("Write how many grams of coffee beans do you want to add: ");
+        initialCoffeeBeanSupply += tell.nextInt();
+        System.out.println("Write how many disposable cups of coffee do you want to add: ");
+        initialCupSupply += tell.nextInt();
+    }
 }
