@@ -9,14 +9,43 @@ public class Main {
     private static int initialDisposableCupSupply = 9;
     private static int initialMoneySupply = 550;
     private static Scanner tell = new Scanner(System.in);
+
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
         menu();
     }
-    public static void menu(){
+
+    public static void menu() {
         boolean comeOut = false;
-        while(!comeOut){
-        System.out.println("Write action (buy, fill, take, remaining, exit): ");
-        String choice =
+        while (!comeOut) {
+            System.out.println("Write action (buy, fill, take, remaining, exit): ");
+            String choice = tell.nextLine();
+            switch (choice) {
+                case "buy": {
+                    buy();
+                    break;
+                }
+                case "fill": {
+                    fill();
+                    break;
+                }
+                case "take": {
+                    take();
+                    break;
+
+                }
+                case "remaining": {
+                    remaining();
+                    break;
+                }
+                case "exit": {
+                    comeOut = true;
+                    break;
+                }
+                default:
+                    System.out.println("sorry wrong input :(");
+            }
+
+        }
     }
 }
