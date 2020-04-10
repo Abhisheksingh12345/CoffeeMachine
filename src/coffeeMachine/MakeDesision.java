@@ -1,19 +1,20 @@
 package coffeeMachine;
 
-public class MakeDesision {
-    private static int espressoWater = 250;
-    private static int espressoCoffeeBeans = 16;
-    private static int espressoPrice = 4;
-    private static int latteWater = 350;
-    private static int latteCoffeeBeans = 20;
-    private static int lattePrice = 7;
-    private static int latteMilk = 75;
-    private static int cappuccinoWater = 200;
-    private static int cappuccinoCoffeeBeans = 12;
-    private static int cappuccinoPrice = 6;
-    private static int cappuccinoMilk = 100;
+public class MakeDesision extends Main {
+
 
     public static void makeOn(int choice) {
+        int espressoWater = 250;
+        int espressoCoffeeBeans = 16;
+        int espressoPrice = 4;
+        int latteWater = 350;
+        int latteCoffeeBeans = 20;
+        int lattePrice = 7;
+        int latteMilk = 75;
+        int cappuccinoWater = 200;
+        int cappuccinoCoffeeBeans = 12;
+        int cappuccinoPrice = 6;
+        int cappuccinoMilk = 100;
         switch (choice) {
 
             case 1: {
